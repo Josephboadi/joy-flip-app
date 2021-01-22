@@ -1,5 +1,6 @@
 {
   "name": "joy-flip-ecom",
+  "proxy": "https://joy-flip-back.herokuapp.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
