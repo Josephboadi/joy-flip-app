@@ -70,8 +70,8 @@ const CartPage = (props) => {
     <Layout>
       <div className="cartContainer" style={{ alignItems: "flex-start" }}>
         <Card
-          headerLeft={`My Cart`}
-          headerRight={<div>Deliver to</div>}
+          headerleft={`My Cart`}
+          headerright={<div>Deliver to</div>}
           style={{ width: "calc(100% - 400px)", overflow: "hidden" }}>
           {Object.keys(cartItems).map((key, index) => (
             <CartItem

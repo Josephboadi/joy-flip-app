@@ -4,9 +4,10 @@ import axios from "../../helpers/axios";
 // new update signup action
 export const signup = (user) => {
   return async (dispatch) => {
+    let res;
     try {
       dispatch({ type: authConstants.SIGNUP_REQUEST });
-      const res = await axios.post(`/signup`, user);
+      res = await axios.post(`/signup`, user);
       if (res.status === 201) {
         dispatch({ type: authConstants.SIGNUP_SUCCESS });
         const { token, user } = res.data;
