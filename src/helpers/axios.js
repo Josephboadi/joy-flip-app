@@ -6,7 +6,7 @@ import { api } from "../urlConfig";
 const token = window.localStorage.getItem("token");
 
 const axiosInstace = axios.create({
-  baseURL: api,
+  baseURL: `https://joycors.herokuapp.com/${api}`,
   headers: {
     Authorization: token ? `Bearer ${token}` : "",
   },

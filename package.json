@@ -1,6 +1,5 @@
 {
   "name": "joy-flip-ecom",
-  "proxy": "http://localhost",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
